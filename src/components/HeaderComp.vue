@@ -47,6 +47,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../style/main.scss';
+@import '../style/partials/_variables.scss';
     
 .container {
     @include space('between');
@@ -72,6 +73,7 @@ export default {
 
                 a {
                     text-decoration: none;
+                    color: $cindet;
 
                     i {
                         margin-left: 0.3rem;
@@ -89,7 +91,6 @@ export default {
         div {
             @include space('between');
             column-gap: 1.5rem
-
         }
     }
 
