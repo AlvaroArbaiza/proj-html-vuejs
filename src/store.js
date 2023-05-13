@@ -20,5 +20,11 @@ export const store = reactive({
         {
             name: 'Shop'
         },
+    ],
+    socials: [
+        'fa-brands fa-twitter',
+        'fa-brands fa-facebook-f',
+        'fa-brands fa-instagram',
+        'fa-brands fa-linkedin'
     ]
 })

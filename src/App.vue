@@ -1,6 +1,7 @@
 <script>
 import { store } from './store.js';
 import HeaderComp from './components/HeaderComp.vue';
+import JumboComp from './components/JumboComp.vue';
 import MainComp from './components/MainComp.vue';
 import FooterComp from './components/FooterComp.vue';
 
@@ -8,6 +9,7 @@ export default {
     name: "App",
     components: {
         HeaderComp,
+        JumboComp,
         MainComp,
         FooterComp
     },
@@ -20,11 +22,22 @@ export default {
 </script>
 
 <template>
+
+<div class="big-container">
     <header>
         <HeaderComp/>
     </header>
+
+    <JumboComp/>
+</div>
+
 </template>
 
 <style lang="scss">
+@import './style/main.scss';
 
+.big-container { 
+    width: 100%;
+    background: url('/img/background-pattern-wavify.png');
+}
 </style>

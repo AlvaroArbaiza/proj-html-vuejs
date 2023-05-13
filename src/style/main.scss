@@ -1,13 +1,12 @@
 @use './partials/_mixin.scss' as *;
 @use './partials/_variables.scss' as *;
-
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import './partials/_mixin.scss';
+@import './partials/_variables.scss';
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
 }
 
 img {
