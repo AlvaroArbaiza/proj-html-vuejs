@@ -57,7 +57,7 @@ export default {
             <div class="little">
 
                 <!-- comment -->
-                <p class="comment">
+                <p class="comment big-text">
                     &#34;Every morning you have two choices: continue to sleep with your dreams, or wake up and chase them.&#34;
                 </p>
 
@@ -103,7 +103,6 @@ export default {
             padding-right: 4rem;
             
             .big-text {
-                font-family: $font-playfair;
                 margin-top: 1.3rem;
                 font-size: 2.3rem;
                 line-height: 3.5rem;
@@ -158,7 +157,6 @@ export default {
             padding: 0 4rem 0 3rem;
 
             .comment {
-                font-family: $font-playfair;
                 font-size: 1.5rem;
                 line-height: 2.5rem;
                 margin-bottom: 3rem;

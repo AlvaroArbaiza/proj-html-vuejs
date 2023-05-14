@@ -50,5 +50,103 @@ export const store = reactive({
             name: 'online instructors',
             stat: '200'
         }
+    ],
+    courses: [
+        {
+            image: 'motivation-course-01-480x298.jpg',
+            price: [
+                '19',
+                '.99'
+            ],
+            title: 'Management Skills: The Science of Leadership',
+            lessons: [
+                'fa-file-lines',
+                '17 lessons'
+            ],
+            students: [
+                'fa-user',
+                '50 students'
+            ]
+        },
+        {
+            image: 'motivation-course-02-480x298.jpg',
+            price: [
+                '25',
+                '.99'
+            ],
+            title: 'Body Language Secrets for Entrepreneurs',
+            lessons: [
+                'fa-file-lines',
+                '19 lessons'
+            ],
+            students: [
+                'fa-user',
+                '50 students'
+            ]
+        },
+        {
+            image: 'motivation-course-03-480x298.jpg',
+            price: [
+                '20',
+                '.00'
+            ],
+            title: 'Effective Time Management Mastery — Complete Guide',
+            lessons: [
+                'fa-file-lines',
+                '18 lessons'
+            ],
+            students: [
+                'fa-user',
+                '50 students'
+            ]
+        },
+        {
+            image: 'motivation-course-04-480x298.jpg',
+            price: [
+                '20',
+                '.00'
+            ],
+            title: 'Productivity Machine — Focus in a Distracted World',
+            lessons: [
+                'fa-file-lines',
+                '5 lessons'
+            ],
+            students: [
+                'fa-user',
+                '50 students'
+            ]
+        },
+        {
+            image: 'motivation-course-05-480x298.jpg',
+            price: [
+                '30',
+                '.00'
+            ],
+            title: 'How to Build Confidence in Your Abilities',
+            lessons: [
+                'fa-file-lines',
+                '1 lesson'
+            ],
+            students: [
+                'fa-user',
+                '50 students'
+            ]
+        },
+        {
+            image: 'motivation-course-06-480x298.jpg',
+            price: [
+                '30',
+                '.00'
+            ],
+            title: 'How to be Successful: Create A Growth Mindset For Success',
+            lessons: [
+                'fa-file-lines',
+                '3 lessons'
+            ],
+            students: [
+                'fa-user',
+                '50 students'
+            ]
+        }
     ]
 })

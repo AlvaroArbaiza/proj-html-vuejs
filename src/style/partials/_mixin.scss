@@ -32,12 +32,13 @@
     margin: $margin auto;
 }
 
-@mixin button ( $width, $padY, $padX, $fontsize, $color, $bgcolor) {
+@mixin button ( $width, $padY, $padX, $fontsize, $fontweight, $color, $bgcolor) {
     width: $width;
     padding: $padY $padX;
     border: none;
     border-radius: 4px;
     font-size: $fontsize;
+    font-weight: $fontweight;
     color: $color;
     background-color: $bgcolor;
 }

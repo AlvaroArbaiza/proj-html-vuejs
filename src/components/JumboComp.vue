@@ -20,7 +20,7 @@ export default {
             <span class="title">
                 i'm a wingman
             </span>
-            <p id="big-text">
+            <p class="big-text">
                 Peace On Earth A Wonderful Wish But No Way
             </p>
             <p class="paragraph color-grey">
@@ -73,18 +73,16 @@ export default {
         row-gap: 2rem;
         padding-right: 4.5rem;
 
-        #big-text {
+        .big-text {
             font-size: 3rem;
-            font-family: $font-playfair;
         }
 
         // button
         button {
-            @include button(14rem, 0.8rem, 1.5rem, 0.7rem, $white, $mountain-meadow);
+            @include button (14rem, 0.8rem, 1.5rem, 0.7rem, 800, $white, $mountain-meadow);
             cursor: pointer;
 
             span {                
-                font-weight: 800;
                 margin-right: 0.7rem;
             }
 

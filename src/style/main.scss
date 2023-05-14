@@ -17,18 +17,21 @@ img {
     @include title(uppercase, 0.1rem, 0.9rem);
 }
 
+// text
 .paragraph {
     line-height: 1.8rem;
 }
+.big-text {
+    font-family: $font-playfair;
+}
 
+// colors
 .color-green {
     color: $mountain-meadow;
 }
-
 .color-violet {
     color: $violet;
 }
-
 .color-grey {
     color: $corduroy;
 }

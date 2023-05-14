@@ -2,12 +2,14 @@
 import { store } from '../store.js';
 import StatsComp from '../components/StatsComp.vue';
 import AboutMeComp from '../components/AboutMeComp.vue';
+import CoursesComp from '../components/CoursesComp.vue';
 
 export default {
     name: "MainComp",
     components: {
         StatsComp,
-        AboutMeComp
+        AboutMeComp,
+        CoursesComp
     },
     data() {
         return {
@@ -20,6 +22,7 @@ export default {
 <template>
     <StatsComp/>
     <AboutMeComp/>
+    <CoursesComp/>
 </template>
 
 
