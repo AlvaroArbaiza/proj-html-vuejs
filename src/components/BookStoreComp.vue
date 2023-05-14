@@ -61,7 +61,7 @@ export default {
                 </div>              
 
                 <!-- title -->
-                <span class="book-title">
+                <span class="book-title color-violet">
                     {{ elem.title }}
                 </span>
 
@@ -174,7 +174,8 @@ export default {
 
             // title
             .book-title {
-                margin: 1.5rem 0 0.8rem;;
+                margin: 1.5rem 0 0.8rem;
+                font-weight: 600;
             }
 
             // price
