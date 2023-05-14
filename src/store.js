@@ -173,5 +173,11 @@ export const store = reactive({
             ]
         }
 
+    ],
+    booksIcons: [
+        'fa-magnifying-glass',
+        'fa-cart-shopping',
+        'fa-heart',
+        'fa-signal'
     ]
 })

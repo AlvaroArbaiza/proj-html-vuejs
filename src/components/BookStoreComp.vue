@@ -45,10 +45,20 @@ export default {
 
         <!-- books -->
         <div class="books">
-            <div class="book" v-for="(elem, index) in store.books" :key="index">
+            <div class="book" v-for="(elem, index) in store.books" :key="index">              
 
-                <!-- image -->                
-                <img :src="`/img/${elem.image}`" :alt="elem.title">       
+                <!-- image -->  
+                <div class="img">
+
+                    <!-- icons -->
+                    <div class="icons">
+                        <div class="icon" v-for="(elem, index) in store.booksIcons" :key="index">
+                            <i :class="`fa-solid ${elem}`"></i>
+                        </div>
+                    </div>
+
+                    <img :src="`/img/${elem.image}`" :alt="elem.title">       
+                </div>              
 
                 <!-- title -->
                 <span class="book-title">
@@ -122,6 +132,45 @@ export default {
             display: flex;
             flex-direction: column;
             flex-basis: calc(80% / 2);
+
+            // image
+            .img {
+                position: relative;
+
+                .icons {
+                    position: absolute;
+                    right: 40px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    transition: all 0.3s ease-in-out;
+
+                    .icon {
+                        width: 0;
+                        height: 0;
+                        text-align: center;
+                        line-height: 2rem;
+                        border-radius: 50%;
+                        font-size: 0;
+                        background-color: $white;
+                        cursor: pointer;
+                        transition: all 0.2s linear;
+
+                        &:hover {
+                            transform: scale(1.5);
+                        }
+                    }
+
+                }
+                
+                &:hover .icon {
+                    width: 2rem;
+                    height: 2rem;
+                    font-size: 1rem;
+                }
+            }
 
             // title
             .book-title {
