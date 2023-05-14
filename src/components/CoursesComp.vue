@@ -87,8 +87,12 @@ export default {
         margin: 3rem auto;
 
         span {
-            margin-right: 0.7rem;
+            margin-right: 0.3rem;
         }
+
+        &:hover {
+                background-color: $violet;
+            }
     }
 }
 </style>

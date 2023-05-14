@@ -57,6 +57,8 @@ export default {
 
 .card {
     width: calc(100% / 3 - 1rem);
+    border-radius: 5px;
+    transition: all 0.2s;
 
     // body
     .body-card {
@@ -97,6 +99,10 @@ export default {
                 margin-right: 2rem;
             }
         }
+    }
+
+    &:hover {
+        box-shadow: 0px 24px 28px -7px #00000029;
     }
 }
 </style>

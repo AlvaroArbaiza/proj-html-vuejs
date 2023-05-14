@@ -148,5 +148,30 @@ export const store = reactive({
                 '50 students'
             ]
         }
+    ],
+    checklist: [
+        'Help you understand yourself better',
+        'Revealing mature tips',
+        'Give the right advice',
+        'Fascinating examples of alpha man'
+    ],
+    books: [
+        {
+            image: 'product-book-10-400x400.jpg',
+            title: 'Real man 4.0 by Maxcoach',
+            price: [
+                '39',
+                '00'
+            ],
+        },
+        {
+            image: 'product-book-11-400x400.jpg',
+            title: 'Alpha man by Maxcoach',
+            price: [
+                '29',
+                '00'
+            ]
+        }
+
     ]
 })
