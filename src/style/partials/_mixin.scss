@@ -28,7 +28,6 @@
 }
 
 @mixin widthMargin ($width, $margin ) {
-
     width: $width;
     margin: $margin auto;
 }
@@ -41,4 +40,10 @@
     font-size: $fontsize;
     color: $color;
     background-color: $bgcolor;
+}
+
+@mixin title ($textTransform, $spacingletter, $fontSize) {
+    text-transform: $textTransform;
+    letter-spacing: $spacingletter;
+    font-size: $fontSize;
 }

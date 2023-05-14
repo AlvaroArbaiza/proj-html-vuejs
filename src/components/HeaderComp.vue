@@ -35,7 +35,9 @@ export default {
     <!-- socials -->
     <div id="socials">
         <div>
-            <i v-for="(elem, index) in store.socials" :key="index" :class="elem"></i>
+            <a href="#" v-for="(elem, index) in store.socials" :key="index">
+                <i :class="elem"></i>
+            </a>
         </div>
     </div>
 </div>
@@ -90,7 +92,12 @@ export default {
 
         div {
             @include space('between');
-            column-gap: 1.5rem
+            column-gap: 1.5rem;
+
+            a {
+                text-decoration: none;
+                color: $cindet;
+            }
         }
     }
 

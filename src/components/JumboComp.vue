@@ -36,31 +36,14 @@ export default {
         <!-- side icons -->
         <div id="side-icons">
             <ul>
-                <li>
+                <li v-for="(elem, index) in store.sideIcons" :key="index">
                     <a href="#">
-                        <i class="fa-solid fa-ruler-combined"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-life-ring"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-book"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i :class="`fa-solid ${elem}`"></i>
                     </a>
                 </li>
             </ul>
         </div>
-
     </div>
-
 </template>
 
 <style lang="scss" scoped>
@@ -74,19 +57,21 @@ export default {
     margin-top: 2rem;
     position: relative;
 
+    // text
     #text-jumbo {
-        flex-basis: 40%;
+        flex-basis: 45%;
         @include center('orizontal');
         flex-direction: column;
         row-gap: 2rem;
-        padding-right: 2rem;
+        padding-right: 4.5rem;
 
         .text-uppercase { 
-            text-transform: uppercase;
+            @include title(uppercase, 0.1rem, 0.9rem);
         }
 
         #big-text {
             font-size: 3rem;
+            font-family: $font-playfair;
         }
 
         .lil-text {
@@ -109,9 +94,10 @@ export default {
         
     }
 
+    // image
     #img-jumbo {
         @include center('orizontal');
-        flex-basis: 60%;
+        flex-basis: 55%;
         background: url("/img/home-movation-shape-face.png") 150px 165px no-repeat;
         background-size: 75%, contain;
 

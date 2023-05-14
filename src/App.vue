@@ -24,12 +24,15 @@ export default {
 <template>
 
 <div class="big-container">
-    <header>
-        <HeaderComp/>
-    </header>
+    
+    <!-- header -->
+    <HeaderComp/>
 
+    <!-- jumbotron -->
     <JumboComp/>
 </div>
+
+<MainComp/>
 
 </template>
 
