@@ -24,7 +24,7 @@ export default {
     <nav>
         <ul>
             <li v-for="(elem, index) in store.nav" :key="index">
-                <a href="#">
+                <a href="#" class="color-violet">
                     <span>{{ elem.name }}</span>
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
@@ -75,7 +75,6 @@ export default {
 
                 a {
                     text-decoration: none;
-                    color: $cindet;
 
                     i {
                         margin-left: 0.3rem;

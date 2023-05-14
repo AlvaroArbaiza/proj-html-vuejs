@@ -12,3 +12,23 @@
 img {
     max-width: 100%;
 }
+
+.title {
+    @include title(uppercase, 0.1rem, 0.9rem);
+}
+
+.paragraph {
+    line-height: 1.8rem;
+}
+
+.color-green {
+    color: $mountain-meadow;
+}
+
+.color-violet {
+    color: $violet;
+}
+
+.color-grey {
+    color: $corduroy;
+}

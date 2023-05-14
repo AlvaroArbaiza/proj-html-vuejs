@@ -19,7 +19,7 @@ export default {
             <img class="img1" src="/img/background-pattern-grid-line-06.png" alt="background line">
             <img class="img2" src="/img/background-pattern-grid-line-06.png" alt="background line">
             
-            <span class="stat">{{ elem.stat }}</span>
+            <span class="stat color-green">{{ elem.stat }}</span>
             <span class="title">{{ elem.name }}</span>
         </div>
 
@@ -62,16 +62,9 @@ export default {
 
         // stat
         .stat {
-            color: #20ac97;
             font-size: 2.5rem;
             margin-bottom: 1rem;
             font-weight: 600;
-        }
-
-        // title
-        .title {
-            @include title( uppercase, 0.1rem, 0.9rem);
-
         }
     }
 

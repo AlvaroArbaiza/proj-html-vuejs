@@ -17,13 +17,21 @@ export default {
 
         <!-- text -->
         <div id="text-jumbo">
-            <span class="text-uppercase">i'm a wingman</span>
-            <p id="big-text">Peace On Earth A Wonderful Wish But No Way</p>
-            <p class="lil-text">Success isn't overnight. lt's when everyday you get a little better than the day before. It all adds up.</p>
+            <span class="title">
+                i'm a wingman
+            </span>
+            <p id="big-text">
+                Peace On Earth A Wonderful Wish But No Way
+            </p>
+            <p class="paragraph color-grey">
+                Success isn't overnight. lt's when everyday you get a little better than the day before. It all adds up.
+            </p>
 
             <!-- button -->
             <button>
-                <span>Get Started For Free</span>
+                <span>
+                    Get Started For Free
+                </span>
                 <i class="fa-solid fa-arrow-right-long"></i>
             </button>
         </div>
@@ -65,19 +73,12 @@ export default {
         row-gap: 2rem;
         padding-right: 4.5rem;
 
-        .text-uppercase { 
-            @include title(uppercase, 0.1rem, 0.9rem);
-        }
-
         #big-text {
             font-size: 3rem;
             font-family: $font-playfair;
         }
 
-        .lil-text {
-            line-height: 1.8rem
-        }
-
+        // button
         button {
             @include button(14rem, 0.8rem, 1.5rem, 0.7rem, $white, $mountain-meadow);
             cursor: pointer;
