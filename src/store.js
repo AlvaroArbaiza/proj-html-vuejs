@@ -233,5 +233,31 @@ export const store = reactive({
             text: "Since I started this course, my learning experience has been exceptional. I appreciate the ability to set my own study rhythm, handpick subjects from a diverse syllabus, and access a user-friendly platform. It's the perfect fit for individuals seeking a personalized and enjoyable learning journey.",
             show: false
         }
+    ],
+    articles: [
+        {
+            image: 'motivation-blog-01-480x325.jpg',
+            title: 'How to Give Yourself Grace to Start Again',
+            date: 'May 13, 2020',
+            text: "Forgive yourself for bad nabits you may nave started. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati natus consequuntur, magni similique exercitationem quaerat voluptatibus hic veritatis, iure, distinctio labore? Delectus ullam sequi minus a! Omnis quas vel facere."        
+         },
+        {
+            image: 'motivation-blog-02-480x325.jpg',
+            title: '11 Super Useful Tips for Small-Business Owners',
+            date: 'May 13, 2020',
+            text: 'Being a small-business owner poses a ton of challenges. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati natus consequuntur, magni similique exercitationem quaerat voluptatibus hic veritatis, iure, distinctio labore? Delectus ullam sequi minus a! Omnis quas vel facere.'
+        },
+        {
+            image: 'motivation-blog-03-480x325.jpg',
+            title: '5 Vital Lessons in 5 Years of Freelancing',
+            date: 'May 13, 2020',
+            text: "Being self-employeo and working from home, it's easy to get. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati natus consequuntur, magni similique exercitationem quaerat voluptatibus hic veritatis, iure, distinctio labore? Delectus ullam sequi minus a! Omnis quas vel facere."
+        },
+        {
+            image: 'motivation-blog-04-480x325.jpg',
+            title: 'How to Stay True to Your Personal Brand',
+            date: 'May 13, 2020',
+            text: "When it comes to your business or career, you want amet consectetur adipisicing elit. Obcaecati natus consequuntur, magni similique exercitationem quaerat voluptatibus hic veritatis, iure, distinctio labore? Delectus ullam sequi minus a! Omnis quas vel facere."
+        }
     ]
 })

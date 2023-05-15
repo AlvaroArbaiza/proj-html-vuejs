@@ -28,6 +28,15 @@ export default {
             Interesting <span class="big-text color-green">articles updated</span> daily
         </span>
 
+        <!-- articles -->
+        <div class="articles">
+            <ArticleComp v-for="(elem, index) in store.articles" :key="index" 
+                :image="elem.image"
+                :title="elem.title"
+                :date="elem.date"
+                :text="elem.text"/>
+        </div>
+
     </div>
 
 </template>
@@ -39,8 +48,14 @@ export default {
 .container {
     @include widthMargin(70%, 0);
     height: 500px;
-    background-color: antiquewhite;
     border: 1px solid black;
+
+    .articles {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+
+    }
 
 }
 
