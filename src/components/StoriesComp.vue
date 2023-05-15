@@ -38,6 +38,18 @@ export default {
             <img src="/img/home-movation-testimonial-image-768x562.jpg" alt="max coach image">
         </div>
 
+        <!-- box ( prev - next ) -->
+        <div class="box">
+
+            <div class="icons next">
+                <i class="fa-solid fa-sort-up"></i>
+            </div>
+            <span>1&#47;4</span>
+            <div class="icons prev">
+                <i class="fa-solid fa-sort-down"></i>
+            </div>
+        </div>
+
     </div>
 
 </template>
@@ -48,15 +60,16 @@ export default {
 
 .container {
     @include widthMargin ( 100%, 4rem );
-    background-color: aliceblue;
-    border: 1px solid;
     display: flex;
+    position: relative;
 
     // stories
     .stories {
         flex-basis: calc(100% / 2); 
         @include center ('both');
         flex-direction: column;
+        background: url('/img/background-pattern-wavify.png');
+        background-color: $amour;
     }
 
     // image
@@ -65,6 +78,29 @@ export default {
 
         img {
             display: block;
+        }
+    }
+
+    // box
+    .box {
+        @include center ('both');
+        flex-direction: column;
+        width: 5rem;
+        aspect-ratio: 1;
+        background-color: $white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
+
+        .icons {
+            width: 100%;
+            height: 1.5rem;
+            line-height: 1.5rem;
+            text-align: center;
+            color: $silver-sand;
         }
     }
 

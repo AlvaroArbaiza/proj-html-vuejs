@@ -14,7 +14,7 @@ img {
 }
 
 .title {
-    @include title(uppercase, 0.1rem, 0.9rem);
+    @include title(uppercase, 0.05rem, 0.9rem);
 }
 
 // text

@@ -38,9 +38,11 @@ export default {
 
 <style lang="scss">
 @import './style/main.scss';
+@import './style/partials/_variables.scss';
 
 .big-container { 
     width: 100%;
     background: url('/img/background-pattern-wavify.png');
+    background-color: $amour;
 }
 </style>
