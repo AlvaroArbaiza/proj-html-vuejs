@@ -24,7 +24,7 @@ export default {
         </span>
 
         <!-- big text -->
-        <span class="big-text">
+        <span class="title2 big-text">
             Interesting <span class="big-text color-green">articles updated</span> daily
         </span>
 
@@ -37,6 +37,11 @@ export default {
                 :text="elem.text"/>
         </div>
 
+        <!-- all posts -->
+        <a href="#" class="all-posts color-green">
+            <span>view all posts</span>
+        </a>
+
     </div>
 
 </template>
@@ -47,14 +52,35 @@ export default {
 
 .container {
     @include widthMargin(70%, 0);
-    height: 500px;
-    border: 1px solid black;
 
+    // title
+    .title {
+        display: block;
+    }
+
+    // big-text
+    .title2 {
+        display: block;
+        font-size: 2.3rem;        
+        margin: 0.5rem 0 4rem;
+    }
+
+    // articles
     .articles {
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
 
+    }
+
+    .all-posts {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin: 3rem auto;
+        display: block;
+        text-align: center;
+        text-underline-offset: 6px;
     }
 
 }
