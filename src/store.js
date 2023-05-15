@@ -161,7 +161,7 @@ export const store = reactive({
             title: 'Real man 4.0 by Maxcoach',
             price: [
                 '39',
-                '00'
+                '.00'
             ],
         },
         {
@@ -169,7 +169,7 @@ export const store = reactive({
             title: 'Alpha man by Maxcoach',
             price: [
                 '29',
-                '00'
+                '.00'
             ]
         }
 
@@ -179,5 +179,35 @@ export const store = reactive({
         'fa-cart-shopping',
         'fa-heart',
         'fa-signal'
+    ],
+    partners: [
+        {
+            image: 'client-logo-01-primary.png',
+            activated: false
+        },
+        {
+            image: 'client-logo-02-primary.png',
+            activated: false
+        },
+        {
+            image: 'client-logo-03-primary.png',
+            activated: false
+        },
+        {
+            image: 'client-logo-04-primary.png',
+            activated: false
+        },
+        {
+            image: 'client-logo-05-primary.png',
+            activated: false
+        },
+        {
+            image: 'client-logo-06-primary.png',
+            activated: false
+        },
+        {
+            image: 'client-logo-07-primary.png',
+            activated: false
+        }
     ]
 })

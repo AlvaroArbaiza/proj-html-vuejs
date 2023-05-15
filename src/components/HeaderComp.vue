@@ -12,12 +12,13 @@ export default {
 </script>
 
 <template>
-
 <div class="container">
 
     <!-- logo -->
     <div id="logo">
-        <img src="/img/dark-logo.png" alt="logo">
+        <a href="#">
+            <img src="/img/dark-logo.png" alt="logo">
+        </a>
     </div>
 
     <!-- navbar -->
@@ -41,11 +42,7 @@ export default {
         </div>
     </div>
 </div>
-
-
-
 </template>
-
 
 <style lang="scss" scoped>
 @import '../style/main.scss';
