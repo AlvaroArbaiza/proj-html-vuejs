@@ -52,7 +52,7 @@ export default {
 @import '../style/partials/_variables.scss';
 
 .container {
-    @include widthMargin ( 70%, 0 );
+    @include widthMargin ( 70%, 2rem );
     @include center('both');
     height: 200px;
     overflow: hidden;
