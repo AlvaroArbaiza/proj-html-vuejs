@@ -182,32 +182,56 @@ export const store = reactive({
     ],
     partners: [
         {
-            image: 'client-logo-01-primary.png',
-            activated: false
+            image: 'client-logo-01-primary.png'
         },
         {
-            image: 'client-logo-02-primary.png',
-            activated: false
+            image: 'client-logo-02-primary.png'
         },
         {
-            image: 'client-logo-03-primary.png',
-            activated: false
+            image: 'client-logo-03-primary.png'
         },
         {
-            image: 'client-logo-04-primary.png',
-            activated: false
+            image: 'client-logo-04-primary.png'
         },
         {
-            image: 'client-logo-05-primary.png',
-            activated: false
+            image: 'client-logo-05-primary.png'
         },
         {
-            image: 'client-logo-06-primary.png',
-            activated: false
+            image: 'client-logo-06-primary.png'
         },
         {
             image: 'client-logo-07-primary.png',
             activated: false
+        }
+    ],
+    stories: [
+        {
+            image: 'testimonial-avata-01.jpg',
+            name: 'Minato Versace',
+            profession: 'Fashion Designer',
+            text: "I've tried many learning platforms, but this course stands out. It offers the flexibility to learn at my own convenience, delve into topics that genuinely interest me, and progress at a pace that feels comfortable. It's an invaluable resource for self-driven learners.",
+            show: true
+        },
+        {
+            image: 'testimonial-avata-02.jpg',
+            name: 'Mina Hollace',
+            profession: 'Freelancer',
+            text: 'I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.',
+            show: false
+        },
+        {
+            image: 'testimonial-avata-03.jpg',
+            name: 'Ted Smith',
+            profession: 'Bodyguard',
+            text: "Taking this course has been a game-changer for me. I now have the freedom to learn at my own pace, explore various subjects from the comprehensive syllabus, and tailor my study schedule to fit my needs. It's truly empowering!",
+            show: false
+        },
+        {
+            image: 'testimonial-avata-04.jpg',
+            name: 'Johan Wallace',
+            profession: 'Web Developer',
+            text: "Since I started this course, my learning experience has been exceptional. I appreciate the ability to set my own study rhythm, handpick subjects from a diverse syllabus, and access a user-friendly platform. It's the perfect fit for individuals seeking a personalized and enjoyable learning journey.",
+            show: false
         }
     ]
 })
