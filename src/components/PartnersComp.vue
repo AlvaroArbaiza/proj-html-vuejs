@@ -14,6 +14,8 @@ export default {
         this.carouselInf()
     },
     methods: {
+
+        // funzione per la clonazione degli elementi partners 
         carouselInf() {
 
             const carousel = document.querySelector(".carousel");
@@ -28,7 +30,6 @@ export default {
                 
                 carousel.appendChild(cloneNode);
             }
-
             console.log(store.partners)
         }
     }
@@ -37,7 +38,11 @@ export default {
 
 <template>
     <div class="container">
+
+        <!-- carousel -->
         <div class="carousel">
+
+            <!-- partners -->
             <div class="partners" v-for="(elem, index) in store.partners" :key="index">
                 
                 <img :src="`/img/${elem.image}`" alt="logo partner">
@@ -92,6 +97,7 @@ export default {
             animation-play-state: paused;
         }
     
+        // partners
         .partners {
             flex-basis: calc(100% / $elements-displayed);
             aspect-ratio: 1;

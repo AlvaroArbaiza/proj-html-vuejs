@@ -5,6 +5,7 @@ import AboutMeComp from '../components/AboutMeComp.vue';
 import CoursesComp from '../components/CoursesComp.vue';
 import BookStoreComp from '../components/BookStoreComp.vue';
 import PartnersComp from '../components/PartnersComp.vue';
+import StoriesComp from '../components/StoriesComp.vue';
 
 export default {
     name: "MainComp",
@@ -13,7 +14,8 @@ export default {
         AboutMeComp,
         CoursesComp,
         BookStoreComp,
-        PartnersComp
+        PartnersComp,
+        StoriesComp
     },
     data() {
         return {
@@ -30,6 +32,7 @@ export default {
         <CoursesComp/>
         <BookStoreComp/>
         <PartnersComp/>
+        <StoriesComp/>
     </main>
 </template>
 

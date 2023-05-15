@@ -112,6 +112,7 @@ export default {
         right: 0;
         transform: translateY(-50%);
         box-shadow: -3px 0px 12px 1px #0000001a;
+        background-color: $white;
         
         ul {
             @include center('vertical');
