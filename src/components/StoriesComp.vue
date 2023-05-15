@@ -10,7 +10,48 @@ export default {
     },
     data() {
         return {
-            store
+            store,
+            active: 0
+        }
+    },
+    methods: {
+        next() {
+
+            console.log(store.stories[this.active].show)
+            console.log(store.stories.length)
+
+            store.stories[this.active].show = false;
+
+            if(this.active ===  store.stories.length - 1) {
+
+                this.active = 0;
+
+                store.stories[this.active].show = true
+            } else {
+
+                this.active++
+    
+                store.stories[this.active].show = true;
+            }
+
+
+        },
+
+        prev() {
+
+            store.stories[this.active].show = false;
+
+            if( this.active == 0) {
+
+                this.active =  store.stories.length - 1;
+
+                store.stories[this.active].show = true
+            } else {
+
+                this.active--
+    
+                store.stories[this.active].show = true;
+            }
         }
     }
 }
@@ -41,11 +82,11 @@ export default {
         <!-- box ( prev - next ) -->
         <div class="box">
 
-            <div class="icons next">
+            <div class="icons next" @click="next">
                 <i class="fa-solid fa-sort-up"></i>
             </div>
             <span>1&#47;4</span>
-            <div class="icons prev">
+            <div class="icons prev" @click="prev">
                 <i class="fa-solid fa-sort-down"></i>
             </div>
         </div>
@@ -93,13 +134,14 @@ export default {
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
-        box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.05);
 
         .icons {
             width: 100%;
             height: 1.5rem;
             line-height: 1.5rem;
             text-align: center;
+            cursor: pointer;
             color: $silver-sand;
         }
     }
