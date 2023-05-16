@@ -70,7 +70,6 @@ export default {
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
-
     }
 
     .all-posts {
@@ -82,7 +81,5 @@ export default {
         text-align: center;
         text-underline-offset: 6px;
     }
-
 }
-
 </style>

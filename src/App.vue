@@ -34,6 +34,8 @@ export default {
 
 <MainComp/>
 
+<FooterComp/>
+
 </template>
 
 <style lang="scss">
