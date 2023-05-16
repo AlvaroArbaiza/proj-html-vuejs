@@ -24,7 +24,9 @@ export default {
         
                     <span class="title-footer">{{ store.address.name }}</span>
                     <ul>
-                        <li v-for="(elem, index) in store.address.data" :key="index">{{ elem }}</li>
+                        <li v-for="(elem, index) in store.address.data" :key="index">                            
+                            {{ elem }}                            
+                        </li>
                     </ul>        
                 </div>
 
@@ -45,7 +47,11 @@ export default {
                     :class="`links ${elem.className}`">
                     <span class="title-footer">{{ elem.name }}</span>
                     <ul>
-                        <li v-for="(el, ind) in elem.data" :key="ind">{{ el }}</li>
+                        <li v-for="(el, ind) in elem.data" :key="ind">
+                            <a href="#">
+                                {{ el }}
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -94,7 +100,7 @@ export default {
             flex-direction: column;
             flex-wrap: wrap;
             height: 60%;
-            font-size: 0.8rem;
+            font-size: 0.8rem;        
             color: $silver-sand;
         }
 
@@ -131,7 +137,12 @@ export default {
 
             // links
             .links {
-                line-height: 2rem;                
+                line-height: 2rem;       
+                
+                a {
+                    text-decoration: none;
+                    color: $silver-sand;
+                }
             }
             
             // explore

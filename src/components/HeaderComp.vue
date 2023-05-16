@@ -24,11 +24,16 @@ export default {
     <!-- navbar -->
     <nav>
         <ul>
-            <li v-for="(elem, index) in store.nav" :key="index">
+            <li class="menu" v-for="(elem, index) in store.nav" :key="index">
                 <a href="#" class="color-violet">
                     <span>{{ elem.name }}</span>
                     <i class="fa-solid fa-angle-down"></i>
                 </a>
+                <ul class="dropdown">
+                    <li v-for="(el, ind) in elem.links" :key="ind">
+                        <a href="#">{{ el }}</a>
+                    </li>
+                </ul>
             </li>               
         </ul>
     </nav>
@@ -68,7 +73,8 @@ export default {
             list-style-type: none;
             column-gap: 2rem;
 
-            li {
+            .menu {
+                position: relative;
 
                 a {
                     text-decoration: none;
@@ -78,6 +84,29 @@ export default {
                         vertical-align: middle;
                         font-size: 0.7rem;
                     }
+                }
+
+                .dropdown {
+                    display: none;
+                    position: absolute;
+                    background-color: $white;
+                    min-width: 6rem;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                    flex-direction: column;
+                    text-align: center;
+
+                    li {
+                        padding: 0.5rem 1rem;
+                        
+                        &:hover {
+                            background-color: $athens-gray;
+                        }
+                    }
+                }
+
+                &:hover .dropdown {
+                    display: flex
                 }
             }
         }

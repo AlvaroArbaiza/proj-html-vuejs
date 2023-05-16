@@ -3,22 +3,62 @@ import { reactive } from 'vue'
 export const store = reactive({
     nav: [
         {
-            name: 'Home'
+            name: 'Home',
+            links: [
+                'link',
+                'link',
+                'link',
+                'link',
+                'link',
+                'link'
+            ]
         },
         {
-            name: 'Pages'
+            name: 'Pages',
+            links: [
+                'link',
+                'link',
+                'link',
+                'link',
+                'link'
+            ]
         },
         {
-            name: 'Course'
+            name: 'Course',
+            links: [
+                'link',
+                'link',
+                'link',
+                'link',
+                'link',
+                'link'
+            ]
         },
         {
-            name: 'Features'
+            name: 'Features',
+            links: [
+                'link',
+                'link'
+            ]
         },
         {
-            name: 'Blog'
+            name: 'Blog',
+            links: [
+                'link',
+                'link',
+                'link',
+                'link',
+                'link',
+                'link'
+            ]
         },
         {
-            name: 'Shop'
+            name: 'Shop',
+            links: [
+                'link',
+                'link',
+                'link'
+            ]
         },
     ],
     socials: [
