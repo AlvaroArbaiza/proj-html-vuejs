@@ -51,6 +51,9 @@ export default {
     flex-basis: calc(100% / 4 - 1rem);
     display: flex;
     flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
 
     // image
     img {
@@ -88,6 +91,12 @@ export default {
         overflow: hidden;
         font-size: 0.9rem;
         line-height: 1.5rem;
+    }
+
+    &:hover {
+        box-shadow: 0px 24px 28px -7px #00000029;
+        border: 1px solid $athens-gray ;
+
     }
 }
 </style>

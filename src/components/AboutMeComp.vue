@@ -49,8 +49,11 @@ export default {
 
             <!-- left -->
             <div class="bigger">
-                <img class="play-img" src="/img/icon-youtube-play.png" alt="youtube play">
-                <img src="/img/home-movation-video-poster-670x450.jpg" alt="video poster">
+                <!-- <img class="play-img" src="/img/icon-youtube-play.png" alt="youtube play">
+                <img src="/img/home-movation-video-poster-670x450.jpg" alt="video poster"> -->
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SAtDOpVSkiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
             </div>
 
             <!-- right -->
@@ -136,7 +139,7 @@ export default {
 
         .bigger {
             flex-basis: 55%;
-            box-shadow: 0px 30px 50px -30px #0000005e;
+            filter: drop-shadow(0px 11px 10px rgba(0, 0, 0, 0.3));
             position: relative;
 
             img {
