@@ -32,7 +32,7 @@ export default {
                     
                     let num = elem.stat.split('+')
 
-                    num[0] = parseInt(num[0]) + 4
+                    num[0] = parseInt(num[0]) + 3
 
                     let nom = num.join("+")
 
@@ -41,32 +41,6 @@ export default {
             })
             }, 3000 );
         }
-    //     stats() {
-            
-    //         store.stats.forEach( (elem, index) => {
-                
-    //             if ( elem.name == 'finished sessions' ) {
-
-    //                 let num = elem.stat.split('.')
-
-    //                 num[1] = parseInt(num[1]) + 2
-
-    //                 let nom = num.join(".")
-
-    //                 elem.stat = nom
-
-    //             } else if ( elem.name == 'enrolled learners' ) {
-                    
-    //                 let num = elem.stat.split('+')
-
-    //                 num[0] = parseInt(num[0]) + 4
-
-    //                 let nom = num.join("+")
-
-    //                 elem.stat = nom
-    //             }
-    //         })
-    //     }
     }
 }
 </script>
