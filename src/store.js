@@ -260,44 +260,36 @@ export const store = reactive({
             text: "When it comes to your business or career, you want amet consectetur adipisicing elit. Obcaecati natus consequuntur, magni similique exercitationem quaerat voluptatibus hic veritatis, iure, distinctio labore? Delectus ullam sequi minus a! Omnis quas vel facere."
         }
     ],
-    footer: [
+    address: {
+        name: 'Address',
+        data: [
+            '382 NE 191st St # 87394 Miami, FL 33179-3899',
+            '+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)',
+            'support@maxcoach.com'
+        ]            
+    },
+    links: [
         {
-            address: [
-                {
-                    name: 'Address',
-                    data: [
-                        {
-                            street: '382 NE 191st St # 87394 Miami, FL 33179-3899',
-                            number: '+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)',
-                            email: 'support@maxcoach.com'
-                        }  
-                    ]
-                }
-            ]            
+            name: 'Explore',
+            className: 'explore',
+            data: [
+                'Start here',
+                'Blog',
+                'About us',
+                'Success story',
+                'Courses',
+                'Contact us'
+            ] 
         },
         {
-            links: [
-                {
-                    name: 'Explore',
-                    data: [
-                        'Start here',
-                        'Blog',
-                        'About us',
-                        'Success story',
-                        'Courses',
-                        'Contact us'
-                    ] 
-                },
-                {
-                    name: 'Information',
-                    data: [
-                        'Membership',
-                        'Purchase guide',
-                        'Privacy policy',
-                        'Terms of service'
-                    ] 
-                }
-            ]            
+            name: 'Information',
+            className: 'information',            
+            data: [
+                'Membership',
+                'Purchase guide',
+                'Privacy policy',
+                'Terms of service'
+            ] 
         }
-    ]
+    ]            
 })

@@ -34,7 +34,7 @@ export default {
     </nav>
 
     <!-- socials -->
-    <div id="socials">
+    <div class="socials">
         <div>
             <a href="#" v-for="(elem, index) in store.socials" :key="index">
                 <i :class="elem"></i>
@@ -84,7 +84,7 @@ export default {
     }
 
     // socials
-    #socials {
+    .socials {
 
         div {
             @include space('between');
